@@ -18,21 +18,28 @@ body, .md a { font-family: Arial; color: #000 }
 
 .md a, .md a:link, .md a:visited {color: #0A7}
 
-.header {
+.header, .footer {
  text-align: left;
- position: absolute;
  margin-left: -20px;
  padding-top: 6px;
  padding-bottom: 6px;
  padding-left: 20px;
  width: 100%;
- top: 0px;
  background: #0A7;
  cursor: pointer;
  user-select: none;
  color: #FFF; font-weight: bold; font-size: 20px;
  font-family: Palatino;
  border-bottom: 1px solid #000;
+ position: absolute;
+ top: 0px;
+}
+
+/* reserve space for header and footer */
+body::before, body::after {
+content: ' ';
+height: 20px;
+display: block;
 }
 
 </style>
