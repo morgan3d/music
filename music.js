@@ -8,15 +8,18 @@ document.write(`
 body { max-width: none }
 .md code { white-space: pre-wrap}
 body, .md a { font-family: Arial; color: #000 }
-.md div.title, .md .tocHeader, .md h1, .md h2, .md h3, .md nonumberh1, .md nonumberh2 { font-family: Palatino; color: #000}
+.md div.title { font-family: Palatino}
+
+.md .tocHeader, .md h1, .md h2, .md h3, .md nonumberh1, .md nonumberh2 { font-family: Palatino; color: #000; text-align: left}
 .md pre.tilde {font-size: 110%; background: #F8F8F0}
 .md h1:before, .md h2:before, .md h3:before, .md h4:before { content: none; }
-.md h1 {font-size: 115%; border-bottom: 2px solid #000}
-.md h2 {font-size: 110%; border-bottom: none}
+.md h1 {font-size: 140%; border-bottom: 2px solid #000}
+.md h2 {font-size: 115%; border-bottom: none}
 
 .md a, .md a:link, .md a:visited {color: #0A7}
 
 .header {
+ text-align: left;
  position: absolute;
  margin-left: -20px;
  padding-top: 6px;
